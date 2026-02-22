@@ -1,110 +1,213 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Asian Culture House</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <title>Asian Culture House | Designer Week Lisbon 2026</title>
+  <meta name="description" content="Asian Culture House (ACH) is a structured platform for Asian creative and cultural showcases. Designer Week — 1st Edition takes place in Lisbon on October 17–18, 2026." />
+  <meta name="keywords" content="Asian Culture House, Designer Week, Lisbon 2026, Asian designers Europe, Asian cultural showcase, Lisbon cultural event" />
 
-<style>
-body {
-  margin: 0;
-  background: #F7F5F2;
-  color: #0f4c45;
-  font-family: 'Montserrat', sans-serif;
-}
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 
-.wrap {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 100px 24px;
-}
+  <style>
+    :root{
+      --jade: #0f4c45;
+      --porcelain: #F7F5F2;
+      --jade-soft: rgba(15, 76, 69, 0.10);
+      --jade-soft-2: rgba(15, 76, 69, 0.18);
+    }
 
-h1 {
-  font-family: 'League Spartan', sans-serif;
-  font-size: 44px;
-  font-weight: 600;
-  margin: 0;
-}
+    * { box-sizing: border-box; }
 
-.subtitle {
-  margin-top: 8px;
-  font-weight: 300;
-  font-size: 18px;
-  letter-spacing: 0.02em;
-}
+    body{
+      margin: 0;
+      background: var(--porcelain);
+      color: var(--jade);
+      font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height: 1.6;
+    }
 
-.section {
-  margin-top: 70px;
-}
+    .wrap{
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 64px 22px 80px;
+    }
 
-h2 {
-  font-family: 'League Spartan', sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  margin-bottom: 16px;
-}
+    header{
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--jade-soft-2);
+      margin-bottom: 28px;
+    }
 
-p, li {
-  font-size: 17px;
-  line-height: 1.7;
-  font-weight: 400;
-}
+    .brand{
+      font-family: "League Spartan", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+      font-size: 34px;
+      margin: 0 0 8px;
+    }
 
-ul {
-  padding-left: 20px;
-}
+    .tagline{
+      margin: 0;
+      font-size: 16px;
+      opacity: 0.9;
+      max-width: 70ch;
+    }
 
-.line {
-  height: 1px;
-  background: #e6e2db;
-  margin: 60px 0;
-}
+    .event{
+      margin-top: 18px;
+      padding: 14px 16px;
+      border: 1px solid var(--jade-soft-2);
+      border-radius: 14px;
+      background: rgba(247, 245, 242, 0.6);
+    }
 
-a {
-  color: #0f4c45;
-  text-decoration: none;
-  font-weight: 500;
-}
-</style>
+    .event h2{
+      margin: 0 0 6px;
+      font-family: "League Spartan", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+    }
+
+    .event p{
+      margin: 0;
+      font-size: 14px;
+      opacity: 0.95;
+    }
+
+    section{
+      padding: 22px 0;
+      border-bottom: 1px solid var(--jade-soft);
+    }
+
+    section:last-of-type{
+      border-bottom: 0;
+    }
+
+    h3{
+      font-family: "League Spartan", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0.25px;
+      margin: 0 0 10px;
+      text-transform: uppercase;
+    }
+
+    p{
+      margin: 0 0 10px;
+      max-width: 80ch;
+    }
+
+    ul{
+      margin: 10px 0 0;
+      padding-left: 18px;
+    }
+
+    li{
+      margin: 6px 0;
+      max-width: 80ch;
+    }
+
+    .muted{
+      opacity: 0.9;
+    }
+
+    .pill{
+      display: inline-block;
+      font-size: 12px;
+      padding: 6px 10px;
+      border: 1px solid var(--jade-soft-2);
+      border-radius: 999px;
+      margin-right: 8px;
+      margin-top: 8px;
+    }
+
+    footer{
+      margin-top: 34px;
+      padding-top: 18px;
+      border-top: 1px solid var(--jade-soft-2);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 14px;
+    }
+
+    a{
+      color: var(--jade);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(15, 76, 69, 0.35);
+    }
+
+    a:hover{
+      border-bottom-color: rgba(15, 76, 69, 0.75);
+    }
+
+    @media (max-width: 560px){
+      .wrap{ padding-top: 46px; }
+      .brand{ font-size: 30px; }
+    }
+  </style>
 </head>
 
 <body>
-<div class="wrap">
+  <div class="wrap">
 
-<h1>Asian Culture House</h1>
-<div class="subtitle">Building a structured platform for Asian cultural exchange.</div>
+    <header>
+      <h1 class="brand">Asian Culture House</h1>
+      <p class="tagline">A structured platform for Asian creative and cultural showcases.</p>
 
-<div class="line"></div>
+      <div class="event">
+        <h2>Designer Week — 1st Edition</h2>
+        <p><strong>October 17–18, 2026</strong> · Lisbon, Portugal <span class="muted">(expansion planned in future editions)</span></p>
+      </div>
 
-<div class="section">
-<p><strong>Designer Week — 1st Edition</strong><br/>
-October 17–18, 2026</p>
-</div>
+      <span class="pill">Community</span>
+      <span class="pill">Culture</span>
+      <span class="pill">Design</span>
+    </header>
 
-<div class="section">
-<h2>About</h2>
-<p>Asian Culture House (ACH) is a cultural platform designed to create a structured and sustainable framework for Asian creative and cultural showcases.</p>
-</div>
+    <section>
+      <h3>About</h3>
+      <p>Asian Culture House (ACH) is an independent cultural platform focused on presenting Asian creative disciplines within a structured, professional framework.</p>
+      <p class="muted">The platform is built for continuity through financial clarity, operational discipline, and defined execution roles.</p>
+    </section>
 
-<div class="section">
-<h2>Focus</h2>
-<ul>
-<li>Cultural dialogue</li>
-<li>Design and craftsmanship</li>
-<li>Ethical and sustainable creative practices</li>
-<li>Long-term platform development</li>
-</ul>
-</div>
+    <section>
+      <h3>Designer Week</h3>
+      <p>Designer Week is a two-day selected showcase structured for quality control and measurable performance.</p>
+      <ul>
+        <li>Up to 25 designers, each presenting 10 featured designs</li>
+        <li>VIP Preview Night + Public Exhibition Day</li>
+        <li>Pre-order driven sales model</li>
+        <li>Ambassador, media, and sponsor engagement</li>
+      </ul>
+    </section>
 
-<div class="section">
-<h2>Partnership Inquiries</h2>
-<p>Email: <a href="mailto:hello@asianculturehouse.co">hello@asianculturehouse.co</a><br/>
-Lisbon, Portugal</p>
-</div>
+    <section>
+      <h3>Structure</h3>
+      <p>ACH operates through defined roles and a controlled financial framework. Production is designed to be sponsorship-supported, with administrative legal hosting during the establishment phase.</p>
+      <p class="muted">Objective: stability before scale.</p>
+    </section>
 
-</div>
+    <section>
+      <h3>Project Lead</h3>
+      <p>ACH is initiated and structured by an independent project lead currently based in Lisbon. The focus remains on building a credible platform rather than personal visibility.</p>
+    </section>
+
+    <footer>
+      <div>
+        <strong>Partnerships & General:</strong> <a href="mailto:hello@asianculturehouse.co">hello@asianculturehouse.co</a><br/>
+        <strong>Press:</strong> <a href="mailto:press@asianculturehouse.co">press@asianculturehouse.co</a><br/>
+        <strong>Support:</strong> <a href="mailto:support@asianculturehouse.co">support@asianculturehouse.co</a>
+      </div>
+      <div class="muted">© Asian Culture House</div>
+    </footer>
+
+  </div>
 </body>
 </html>
